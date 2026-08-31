@@ -1,0 +1,42 @@
+{
+    "total_count": 6,
+    "valid_count": 4,
+    "invalid_count": 2,
+    "domain_counts": {
+        "naver.com": 1,
+        "domain.com": 2,
+        "example.com": 1
+    },
+    "valid_emails": [
+        {
+            "email": "user1@naver.com",
+            "id": "user1",
+            "domain": "naver.com"
+        },
+        {
+            "email": "user2@domain.com",
+            "id": "user2",
+            "domain": "domain.com"
+        },
+        {
+            "email": "admin@example.com",
+            "id": "admin",
+            "domain": "example.com"
+        },
+        {
+            "email": "guest@domain.com",
+            "id": "guest",
+            "domain": "domain.com"
+        }
+    ],
+    "invalid_emails": [
+        {
+            "data": "invalid-email-format",
+            "reason": "유효하지 않은 이메일 형식"
+        },
+        {
+            "data": "test_mailadress@com",
+            "reason": "유효하지 않은 이메일 형식"
+        }
+    ]
+}

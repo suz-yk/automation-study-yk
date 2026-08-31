@@ -1,0 +1,6 @@
+user1@naver.com
+invalid-email-format
+user2@domain.com
+admin@example.com
+test_mailadress@com
+guest@domain.com
