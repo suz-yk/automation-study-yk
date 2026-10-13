@@ -20,7 +20,7 @@ def test_스토어_페이지로_이동(page: Page):
     # 스토어 주소인 /solution으로 이동했는지 검증
     expect(page).to_have_url(f"{URL}/solution")
 
-# 4) 실패 케이스 ("QMeet 홈화면" 의도적 오류)
-def test_실패_케이스_QMeet_홈화면_확인(page: Page):
-    page.goto(URL)
-    expect(page.get_by_role("link", name="QMeet 홈화면")).to_be_visible()
+# 4) 실패케이스 ("QMeet 홈화면" 의도적 오류) > 정상으로 변경
+def test_실패_케이스_QMeet_홈_확인(page: Page):
+    page.goto("https://dev.l-walk.com")
+    expect(page.get_by_role("link", name="QMeet 홈")).to_be_visible()
